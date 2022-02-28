@@ -5,7 +5,7 @@ export const get: RequestHandler = async (event) => {
 	// const item = await db.get(params.id);
 
 	return {
-		status: 404,
+		status: 200,
 		body: {
 			status: 'ok',
 			message: event.request.url
@@ -17,7 +17,7 @@ export const post: RequestHandler = async (event) => {
 	const body = await event.request.json();
 
 	return {
-		status: 404,
+		status: 200,
 		body: {
 			status: 'ok',
 			message: event.request.url,
